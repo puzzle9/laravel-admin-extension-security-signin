@@ -1,0 +1,35 @@
+{
+    "name": "puzzle9/laravel-admin-extension-security-signin",
+    "description": "适用于 laravel-admin 的 安全登录扩展,支持登录时验证码、限流、rsa加密等",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "security-signin"],
+    "homepage": "https://github.com/puzzle9/laravel-admin-extension-security-signin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "puzzle9",
+            "email": "happypuzzle@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "mews/captcha": "~3.2",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\SecuritySignin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\SecuritySignin\\SecuritySigninServiceProvider"
+            ]
+        }
+    }
+}
