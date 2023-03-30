@@ -30,6 +30,8 @@ php artisan vendor:publish --provider="Encore\SecuritySignin\SecuritySigninServi
             'enable'                      => true,
             // 只有首次登录失败才展示验证码
             'first_login_failure_display' => true,
+            // 缓存名称
+            'cache_name'                  => 'laravel_admin_captcha_cache',
         ],
         'throttles'       => [
             // 是否开启登录限流

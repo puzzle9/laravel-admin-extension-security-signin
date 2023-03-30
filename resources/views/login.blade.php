@@ -66,7 +66,7 @@
                 use Encore\SecuritySignin\SecuritySignin;
                 $captcha_enable = SecuritySignin::config('captcha.enable');
                 $captcha_first_login_failure_display = SecuritySignin::config('captcha.first_login_failure_display');
-                $captcha_cache_name = SecuritySignin::config('captcha.captcha_cache_name');
+                $captcha_cache_name = SecuritySignin::config('captcha.cache_name');
                 $throttles_decay_minutes = SecuritySignin::config('throttles.decay_minutes');
 
                 if ($errors->count()) {
