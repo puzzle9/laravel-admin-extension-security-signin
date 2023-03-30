@@ -25,7 +25,7 @@ class SecuritySigninServiceProvider extends ServiceProvider
             $assets = $extension->assets();
             $this->publishes([
                 $assets => public_path('vendor/laravel-admin-ext/security-signin'),
-            ]);
+            ], 'laravel-admin-extension-security-signin');
         }
 
         $this->app->booted(function () {
